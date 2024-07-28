@@ -107,7 +107,8 @@ body.loaded {
 
 .about_txt{
     display: inline-block;
-    width: 43%;
+    text-align: justify;
+    width: 38%;
     color:black;
 }
 

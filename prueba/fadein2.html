@@ -6,12 +6,12 @@
     <title>Página con Efectos de Transición</title>
     <style>
         body {
-            opacity: 0;
-            transition: opacity 2s ease-in-out;
+            opacity:0;
+            transition: opacity 1s ease-in-out;
         }
 
-        body.loaded {
-            opacity: 1;
+        body.fade-out {
+            opacity: 0;
         }
 
         .transition-link {
@@ -30,19 +30,19 @@
         }
     </style>
 </head>
-<body>
+<body id="body">
     <div id="content">
         <h1>Bienvenido a mi página</h1>
         <p>Esta es una página con efectos de transición.</p>
-        <a href="fadeIn1.html" class="transition-link">Ir a otra página</a>
+        <a href="fadein1.html" class="transition-link">Ir a otra página</a>
     </div>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Fade-in effect
-            setTimeout(function() {
-                document.body.classList.add('loaded');
-            }, 10); // Slight delay to ensure CSS transition works on page load
+        window.onload = function () {
+            const opaci = document.getElementById("body");
+            opaci.style.opacity = 1
+        }
 
+        document.addEventListener('DOMContentLoaded', function() {
             // Add click event to links with class "transition-link"
             const links = document.querySelectorAll('.transition-link');
             for (let link of links) {
@@ -51,11 +51,11 @@
                     const targetUrl = this.getAttribute('href');
 
                     // Fade-out effect
-                    document.body.classList.remove('loaded');
+                    document.body.classList.add('fade-out');
                     
                     setTimeout(function() {
                         window.location.href = targetUrl;
-                    }, 2000); // Wait for the fade-out effect to complete
+                    }, 1000); // Wait for the fade-out effect to complete
                 });
             }
         });

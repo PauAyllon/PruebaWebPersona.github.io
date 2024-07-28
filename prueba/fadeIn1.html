@@ -6,12 +6,11 @@
     <title>Página con Efectos de Transición</title>
     <style>
         body {
-            opacity: 0;
-            transition: opacity 2s ease-in-out;
+            transition: opacity 1s ease-in-out;
         }
 
-        body.loaded {
-            opacity: 1;
+        body.fade-out {
+            opacity: 0;
         }
 
         .transition-link {
@@ -38,11 +37,6 @@
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Fade-in effect
-            setTimeout(function() {
-                document.body.classList.add('loaded');
-            }, 10); // Slight delay to ensure CSS transition works on page load
-
             // Add click event to links with class "transition-link"
             const links = document.querySelectorAll('.transition-link');
             for (let link of links) {
@@ -51,11 +45,11 @@
                     const targetUrl = this.getAttribute('href');
 
                     // Fade-out effect
-                    document.body.classList.remove('loaded');
+                    document.body.classList.add('fade-out');
                     
                     setTimeout(function() {
                         window.location.href = targetUrl;
-                    }, 2000); // Wait for the fade-out effect to complete
+                    }, 1000); // Wait for the fade-out effect to complete
                 });
             }
         });
