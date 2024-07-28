@@ -1,0 +1,108 @@
+<head>
+    <title>Mónica Cases - About Me</title>
+
+    <link rel="icon" href="multimedia/iconos/Ventana/icono_crow_2.png">
+    <link rel="stylesheet" href="estilos/about_style.css">
+
+    <script src="javascript/portfolio.js" defer></script>
+    <script src="javascript/fade_out.js" defer></script>
+    <script src="javascript/mobile_menu.js" defer></script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="V_Desktop">
+        <nav class="navbar">
+            <div class="navbar_left">
+                <a href="index.html" class="button transition-link">
+                    <p id="title">Mónica Cases Iranzo</p>
+                    <p id="subtitle">|⠀Visual development</p>
+                </a>
+            </div>
+
+            <div class="navbar_right">
+                <a href="portfolio.html" class="button transition-link"><p>PORTFOLIO</p></a>
+                <a href="about.html" class="button transition-link" style="margin-right: 132px;"><p>ABOUT ME</p></a>
+            </div>
+        </nav>
+
+        <div style="opacity: 1; transition-duration: 2s;" id="mainbody"> <!-- DIV de todo el cuerpo menos la barra de navegación -->
+            <div class="about_div">
+                <div class="about_img">
+                    <img src="multimedia/crow_about.png" style="width: 45vw;">
+                </div>
+
+                <div class="about_txt">
+                    <p id="title_info" style="padding-top: 26%;">ABOUT ME</p>
+
+                    <p id="txt_info" >I am Mónica Cases, a Spanish junior concept artist and illustrator, also known as Fungi_crow on social media.</p>
+                    <p id="txt_info">I'm studying the 4th course of BBAA at the Polytechnic University of Valencia. I am mainly dedicated to character design, props and colour scripts.</p>
+                    <p id="txt_info" style="margin-bottom: 40px;">Since I was little, I have been fascinated by the world of animation and video games, and I would love to be part of that beautiful world.</p>
+
+                    <p id="mailto"><b>monicasesiranzo@gmail.com</b></p>
+
+                    <a href="multimedia/TFG_PauAyllonOrtola.pdf" id="Button"><div id="CV_button">VIEW RESUME</div></a>
+                </div>
+            </div>
+            <div class="bottom_info">
+                <div class="RS_div">
+                    <a href="https://www.instagram.com/fungi_crow/" id="RS_button" class="transition-link"> <img src="multimedia/iconos/RedesSociales/png_instagram_marron.png" id="RS_icon"> </a>
+                    <a href="https://x.com/fungi_crow" id="RS_button" class="transition-link"> <img src="multimedia/iconos/RedesSociales/png_twitter_marron.png" id="RS_icon"> </a>
+                    <a href="www.linkedin.com/in/mónica-cases-iranzo-2ab5092a8" id="RS_button" class="transition-link"> <img src="multimedia/iconos/RedesSociales/png_linkedin_marron.png" id="RS_icon"> </a>
+                    <a href="mailto:monicasesiranzo@gmail.com" id="RS_button"> <img src="multimedia/iconos/RedesSociales/png_email_marron.png" id="RS_icon"> </a>
+                </div>
+                <p id="mailto">monicasesiranzo@gmail.com</p>
+                <p id="copyright">© Copyright 2024 Mónica Cases Iranzo - All rights reserved<br>Website programmed by <a href="https://www.linkedin.com/in/pau-ayll%C3%B3n-ortol%C3%A1-021490304/" style="text-decoration: none;" class="transition-link">Pau Ayllón Ortolá</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="V_Mobile">
+        <nav>
+            <div class="navbar-mobile">
+                <div class="navbar_left">
+                    <a href="index.html" class="button transition-link">
+                        <p id="title">Mónica Cases Iranzo</p>
+                        <p id="subtitle">Visual development</p>
+                    </a>
+                </div>
+                <button class="navbar_right" onclick="toggleMenu2()">  <img id="menubuttonpng" src="multimedia/iconos/RedesSociales/menu.png" style="width: 7vw;">  </button>
+            </div>
+            <ul class="menu-items" id="menuItems">
+                <ul>  
+                  <div>
+                    <a class="navbar-menu-link transition-link" href="portfolio.html" style="margin-top: 20px; padding-right: 40px;">Portfolio</a>
+                    <a class="navbar-menu-link transition-link" href="about.html" style="margin-top: 50px; padding-right: 40px;">About me</a>
+                  </div>
+                </ul>
+              </ul>
+        </nav>
+
+        <div class="about_txt">
+            <p id="title_info" style="padding-top: 26%;">ABOUT ME</p>
+            <p id="txt_info" >I am Mónica Cases, a Spanish junior concept artist and illustrator, also known as Fungi_crow on social media.</p>
+            <p id="txt_info">I'm studying the 4th course of BBAA at the Polytechnic University of Valencia. I am mainly dedicated to character design, props and colour scripts.</p>
+            <p id="txt_info" style="margin-bottom: 40px;">Since I was little, I have been fascinated by the world of animation and video games, and I would love to be part of that beautiful world.</p>
+
+            <p id="mailto"><b>monicasesiranzo@gmail.com</b></p>
+        </div>
+
+        <div class="about_img">
+            <img src="multimedia/crow_about.png" style="width: 80vw;">
+        </div>
+
+        <div class="bottom_info_mobile">
+            <div class="RS_div">
+                <a href="https://www.instagram.com/fungi_crow/" id="RS_button" class="transition-link"> <img src="multimedia/iconos/RedesSociales/png_instagram_marron.png" id="RS_icon"> </a>
+                <a href="https://x.com/fungi_crow" id="RS_button" class="transition-link"> <img src="multimedia/iconos/RedesSociales/png_twitter_marron.png" id="RS_icon"> </a>
+                <a href="www.linkedin.com/in/mónica-cases-iranzo-2ab5092a8" id="RS_button" class="transition-link"> <img src="multimedia/iconos/RedesSociales/png_linkedin_marron.png" id="RS_icon"> </a>
+                <a href="mailto:monicasesiranzo@gmail.com" id="RS_button"> <img src="multimedia/iconos/RedesSociales/png_email_marron.png" id="RS_icon"> </a>
+            </div>
+            <p id="mailto">monicasesiranzo@gmail.com</p>
+            <p id="copyright">© Copyright 2024 Mónica Cases Iranzo - All rights reserved<br>Website programmed by <a href="https://www.linkedin.com/in/pau-ayll%C3%B3n-ortol%C3%A1-021490304/" style="text-decoration: none;" class="transition-link">Pau Ayllón Ortolá</a></p>
+        </div>
+    </div>
+</body>

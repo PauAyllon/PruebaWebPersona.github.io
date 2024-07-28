@@ -1,0 +1,202 @@
+@font-face {
+    font-family: "neco_bold";
+    src: 
+      url("../fuentes/Neco/Neco-Bold.woff")format("woff"); 
+  }
+@font-face {
+    font-family: "Supreme_Regular";
+    src: 
+      url("../fuentes/Supreme/Supreme-Regular.woff")format("woff"); 
+  }
+
+/*---------------------------------------------------------*/
+/* Objetos Base */
+body {
+    background-color: #ffffff;
+    /*background-image: url("../multimedia/index/casa 2.png");*/
+    margin: 0;   
+    opacity: 0;
+    transition: opacity 1s ease-in-out; 
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+/*---------------------------------------------------------*/
+/* Titulos e información */
+.Index_page{
+    position: relative;
+}
+
+.Title_div{
+    background-color: #5962669d;/*                               <-----   Color de fondo (#1e223871) */
+    border-radius: 0em; /*                                         <-----   BORDE DE LA IMAGEN DEL CUADRO (.6em)  */
+    box-shadow: 6px 6px 8px rgba(28,28,28,.7);/*                 <-----   SOMBRA DEL CUADRO  */
+    backdrop-filter: blur(8px);
+    text-align: center;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 22vh;
+}
+
+.RS_div{
+    position: fixed;
+    left: 50%;
+    bottom: 40px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    transition-duration: .5s;
+}
+
+#Nombre_index{
+    font-family: "neco_bold";
+    font-size: 7vw;
+    font-weight: 550;
+    color: #ffffff;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top:0;
+    margin-bottom:10px;
+}
+
+#Info_index{
+    font-size: 1.7vw;
+    font-family: "Supreme_Regular";
+    color: #ffffff;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+
+/*---------------------------------------------------------*/
+/* Botones Index */
+.button_div{
+    padding-bottom: 30px;
+}
+
+#button{
+    font-size: 23;
+    color: #fdf4f2;
+    font-family: "Supreme_Regular";
+    display:inline-block;
+    text-decoration:none;
+    transition-duration: .5s;
+}
+
+#button:hover{
+    color: #fac18c;
+}
+
+#RS_button{text-decoration: none;}
+
+.RS_icon{
+    width: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+    transition-duration: .5s;
+}
+
+.RS_icon:hover{
+    opacity:1;
+}
+
+.RS_icon:hover ~ .RS_icon{
+    opacity:.5;
+}
+
+.RS_div:hover .RS_icon{
+    opacity:.5;
+}
+
+.RS_div:hover .RS_icon:hover{
+    opacity:1;
+}
+
+.mail{
+    color:#ffffff;
+    font-family: "Supreme_Regular";
+    font-size: 18px;
+    position: fixed;
+    left: 50%;
+    bottom: 15px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+/*---------------------------------------------------------*/
+/* Background */
+#Index_Page{
+    opacity: 1;
+    transition-duration: 2.5s;
+}
+
+#background_index{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../multimedia/index/PORTADA.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -1;
+    border: 0px solid #282c3f;
+    border-radius: 0em; /*                                             <-----   BORDE DE LA IMAGEN DE FONDO  */
+    box-sizing: border-box;
+    opacity: 1;
+    transition-duration: 2.5s;
+}
+
+/*---------------------------------------------------------*/
+/* Versión para movil */
+@media screen and (max-width: 767px) {
+    .Title_div{
+        z-index: 4;
+        background-color: #5962669d;/*                               <-----   Color de fondo (#1e223871) */
+        border-radius: 0em; /*                                         <-----   BORDE DE LA IMAGEN DEL CUADRO (.6em)  */
+        box-shadow: 6px 6px 8px rgba(28,28,28,.7);/*                 <-----   SOMBRA DEL CUADRO  */
+        text-align: center;
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60%;
+        width: 90%;
+    }
+
+    .RS_div{
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        bottom: 35px;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+    }
+
+    .RS_icon{
+        width: 40px;
+        margin-right: 8px;
+        margin-left: 8px;
+        text-decoration: none;
+        transition-duration: .5s;
+    }
+
+    #Nombre_index{
+        font-family: "neco_bold";
+        font-size: 14vw;
+        font-weight: 550;
+        color: #ffffff;
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-top:0;
+        margin-bottom:10px;
+        line-height: .9em;
+    }
+
+    #Info_index{
+        font-size: 5vw;
+        padding-top: 50px;
+    }
+}

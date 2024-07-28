@@ -1,0 +1,120 @@
+<head>
+    <title>Mónica Cases — Yungay</title>
+
+    <link rel="icon" href="../multimedia/iconos/Ventana/icono_crow_2.png">
+    <link rel="stylesheet" href="../estilos/proyectos_style.css">
+
+    <script src="../javascript/FVI.js" defer></script>
+    <script src="../javascript/fade_out.js" defer></script>
+    <script src="../javascript/mobile_menu.js" defer></script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="yungay_body">
+    <nav class="navbar">
+        <div class="navbar_left">
+            <a href="../index.html" class="button transition-link"> 
+                <p id="title">Mónica Cases Iranzo</p>
+                <p id="subtitle">|⠀Visual development</p>
+            </a>
+        </div>
+
+        <div class="navbar_right">
+            <a href="../portfolio.html" class="button transition-link"><p>PORTFOLIO</p></a>
+            <a href="../about.html" class="button transition-link" style="margin-right: 115px;"><p>ABOUT ME</p></a>
+        </div>
+    </nav>
+
+    <nav>
+        <div class="navbar-mobile">
+            <div class="navbar_left">
+                <a href="../index.html" class="button transition-link">
+                    <p id="title">Mónica Cases Iranzo</p>
+                    <p id="subtitle">Visual development</p>
+                </a>
+            </div>
+            <button class="navbar_right" onclick="toggleMenu2()">  <img id="menubuttonpng" src="../multimedia/iconos/RedesSociales/menu.png" style="width: 7vw;">  </button>
+        </div>
+        <ul class="menu-items" id="menuItems">
+            <ul>  
+              <div>
+                <a class="navbar-menu-link transition-link" href="../portfolio.html" style="margin-top: 20px; padding-right: 40px;">Portfolio</a>
+                <a class="navbar-menu-link transition-link" href="../about.html" style="margin-top: 50px; padding-right: 40px;">About me</a>
+              </div>
+            </ul>
+          </ul>
+    </nav>
+
+    <div style="margin-top: 120px;" class="gallery">
+        <div class="fotos">
+            <img src="../multimedia/proyectos/4.Yungay/PORTFOLIO.png" id="fotos1" onclick="openLightbox(0)">
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+        <span class="close" onclick="closeLightbox(event)">&times;</span>
+        <span class="nav-button prev" onclick="prevImage(event)">&#10094;</span>
+        <img id="lightbox-img" src="" alt="Imagen ampliada">
+        <span class="nav-button next" onclick="nextImage(event)">&#10095;</span>
+    </div>
+
+    <hr id="project_bar">
+
+    <div class="projects">
+        <div class="cover">
+            <div class="img_container">
+                <img src="../multimedia/portfolio/2.png" id="coverind">
+                <a href="enlamismaonda.html" class="transition-link"><div class="overlay_img">
+                    <div id="overlay_txt">En la misma onda</div>
+                </div></a>
+            </div>
+
+            <div class="img_container">
+                <img src="../multimedia/portfolio/3.png" id="coverind">
+                <a href="Echameunapata.html" class="transition-link"><div class="overlay_img">
+                    <div id="overlay_txt">Échame una pata</div>
+                </div></a>
+            </div>
+
+
+            <div class="img_container">
+                <img src="../multimedia/portfolio/1.png" id="coverind">
+                <a href="pip_kow.html" class="transition-link"><div class="overlay_img">
+                    <div id="overlay_txt">Pip King of Wizards</div>
+                </div></a>
+            </div>  
+        </div>
+    </div>
+
+    <div class="projects_mobile">
+        <div class="cover">
+            <div class="img_container">
+                <a href="Echameunapata.html" class="transition-link">
+                    <img src="../multimedia/portfolio/3.png" id="coverind">
+                </a>
+            </div>
+
+            <div class="img_container">
+                <a href="pip_kow.html" class="transition-link">
+                    <img src="../multimedia/portfolio/1.png" id="coverind">
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bottom_info">
+        <div class="RS_div">
+            <a href="https://www.instagram.com/fungi_crow/" id="RS_button" class="transition-link"> <img src="../multimedia/iconos/RedesSociales/png_instagram_marron.png" id="RS_icon"> </a>
+            <a href="https://x.com/fungi_crow" id="RS_button" class="transition-link"> <img src="../multimedia/iconos/RedesSociales/png_twitter_marron.png" id="RS_icon"> </a>
+            <a href="www.linkedin.com/in/mónica-cases-iranzo-2ab5092a8" id="RS_button" class="transition-link"> <img src="../multimedia/iconos/RedesSociales/png_linkedin_marron.png" id="RS_icon"> </a>
+            <a href="mailto:monicasesiranzo@gmail.com" id="RS_button"> <img src="../multimedia/iconos/RedesSociales/png_email_marron.png" id="RS_icon"> </a>
+        </div>
+        <p id="mailto">monicasesiranzo@gmail.com</p>
+        <p id="copyright">© Copyright 2024 Mónica Cases Iranzo - All rights reserved<br>Website programmed by <a href="https://www.linkedin.com/in/pau-ayll%C3%B3n-ortol%C3%A1-021490304/" style="text-decoration: none;" class="transition-link">Pau Ayllón Ortolá</a></p>
+    </div>
+
+</body>

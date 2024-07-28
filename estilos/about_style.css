@@ -1,0 +1,324 @@
+@font-face {
+    font-family: "neco_bold";
+    src: 
+      url("../fuentes/Neco/Neco-Bold.woff")format("woff"); 
+  }
+@font-face {
+    font-family: "Supreme_Regular";
+    src: 
+      url("../fuentes/Supreme/Supreme-Regular.woff")format("woff"); 
+  }
+@font-face {
+    font-family: "Supreme_Medium";
+    src: 
+      url("../fuentes/Supreme/Supreme-Medium.woff")format("woff"); 
+  }
+
+/*---------------------------------------------------------*/
+/* Objetos Base */
+body {
+    background: linear-gradient(#ffffff 70%, #f5d5b4 95%);
+    margin: 0;   
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+.V_Desktop{display:block;}
+.V_Mobile{display:none;}
+
+/*---------------------------------------------------------*/
+/* Barra de navegación */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffffc2;
+    backdrop-filter: blur(14px);
+    padding: 15px 20px;
+    padding-top: 0;
+    padding-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar_left{
+    display: ruby;
+    align-items: center;
+    text-align: center;
+    margin-left: 65px;
+}
+
+.navbar_right{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button{
+    text-decoration: none;
+    color: #4b1f00;
+    font-family: "Supreme_Regular";
+    margin-right: 50px;
+    transition-duration: .5s;
+}
+
+.button:hover{
+    color:rgb(181, 124, 75);
+}
+
+#title{
+    font-size: 30;
+    font-family: "neco_bold";
+    font-weight: 550;
+    color:rgb(181, 124, 75);
+    margin-bottom: 0;
+}
+
+#subtitle{
+    font-size: 14;
+    font-family: "Supreme_Regular";
+    color: #4b1f00;
+    margin-top: 0;
+    margin-left: 6px;
+    position:relative;
+    top:-4;
+}
+
+/*---------------------------------------------------------*/
+/* Información sobre mi */
+
+.about_div{
+    display:flex;
+}
+
+.about_img{
+    text-align: center;
+    display: inline-block;
+    margin-top: 120px;
+    margin-left: 40px;
+    width: 50%;
+}
+
+.about_txt{
+    display: inline-block;
+    width: 43%;
+    color:black;
+}
+
+#txt_info{
+    font-size: 20;
+    font-family: "Supreme_Regular";
+    color:#4b1f00;
+}
+
+#title_info{
+    font-size: 30;
+    font-family: "Supreme_Regular";
+    font-weight: 500;
+    color:#4b1f00;
+}
+
+#button{
+    text-decoration: none; 
+    display: flex;
+    max-width: fit-content;
+}
+
+#CV_button{
+    display:none;
+    color: black;
+    font-size: 30;
+    border-color: #eba798;
+    border-style: solid;
+    border-width: .1em;
+    border-radius: .4em;
+    background-color: #fdf4f2;
+    max-width: fit-content;
+    padding-left: 20;
+    padding-right: 20;
+    padding-top: 10;
+    padding-bottom: 10;
+
+    transition-duration: .5s;
+}
+
+#CV_button:hover {
+    background-color: #eba798;
+    color:#fdf4f2;
+}
+
+/*---------------------------------------------------------*/
+/* Redes sociales */
+
+.bottom_info{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    transition-duration: .5s;
+}
+
+#RS_button{text-decoration: none;}
+
+#RS_icon{
+    width: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    transition-duration: .5s;
+}
+
+#RS_icon:hover{
+    opacity:1;
+}
+
+#RS_icon:hover ~ #RS_icon{
+    opacity:.5;
+}
+
+.RS_div:hover #RS_icon{
+    opacity:.5;
+}
+
+.RS_div:hover #RS_icon:hover{
+    opacity:1;
+}
+
+#mailto{
+    font-size: 20;
+    font-weight: 100;
+    font-family: "Supreme_Regular";
+    color:#4b1f00;
+    margin-bottom: 30px;
+}
+
+#copyright{
+    text-align: center;
+    font-size: 11;
+    color: #4b1f00;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+/*---------------------------------------------------------*/
+/* Versión para movil */
+@media screen and (max-width: 767px) {
+    body {
+        background: linear-gradient(#ffffff 65%, #f5d5b4 95%);
+        margin: 0;   
+    }
+
+    .V_Desktop{display:none;}
+    .V_Mobile{display:block;}
+
+    .about_img{
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .about_txt{
+        width: 100%;
+        text-align: center;
+    }
+
+    #txt_info{
+        text-align: justify;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .bottom_info_mobile{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 80px;
+    }
+
+    /*---------------------------------------------------------*/
+    /* Navbar Movil */
+    .navbar-mobile {
+        -webkit-backdrop-filter: blur(5px);
+        display: flex;
+        align-items: center;
+        background-color: #ffffffc2;
+        backdrop-filter: blur(14px);
+        padding-top: 0;
+        padding-bottom: 20px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 4;
+        }
+
+    .navbar_left{
+        display: block;
+        align-items: center;
+        text-align: center;
+        margin-left: 30px;
+    }
+    
+    .navbar_right{
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        margin-right: 40px;
+        position:absolute;
+        top:9;
+        right: -14;
+        z-index: 5;
+    }
+
+    #title{
+        font-size: 20;
+        font-family: "neco_bold";
+        font-weight: 550;
+        color:rgb(181, 124, 75);
+        margin-bottom: 0;
+    }
+    
+    #subtitle{
+        font-size: 14;
+        font-family: "Supreme_Regular";
+        color: #4b1f00;
+        margin-top: 0;
+        margin-left: 6px;
+        position:relative;
+        top:-4;
+    }
+
+    .menu-items {
+        -webkit-backdrop-filter: blur(5px);
+        display: none;
+        list-style: none;
+        position: fixed; 
+        z-index: 4; 
+        background-color:#ffffffc2;
+        backdrop-filter: blur(14px);
+        width: 100%;
+        height: 100;
+        text-align: center;
+        margin-top: 98px;
+        }
+
+    .navbar-menu-link{
+        font-family: "Supreme_Medium";
+        color: #4b1f00;
+        font-size: 20;
+        position: absolute;
+        display: block;
+        text-align: end;
+        text-decoration: none;
+        right: 40;
+        z-index: 5; 
+        }
+}
